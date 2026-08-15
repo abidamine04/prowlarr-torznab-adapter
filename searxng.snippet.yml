@@ -1,0 +1,26 @@
+categories_as_tabs:
+  general:
+  images:
+  videos:
+  news:
+  map:
+  music:
+  it:
+  science:
+  files:
+  social media:
+  torrents:
+
+engines:
+  - name: prowlarr-all
+    engine: torznab
+    shortcut: pa
+    categories:
+      - torrents
+    disabled: false
+    enable_http: true
+    timeout: 35.0
+    base_url: "http://prowlarr-adapter:8080/torznab"
+    api_key: "REPLACE_WITH_ADAPTER_API_KEY"
+    show_torrent_files: false
+    show_magnet_links: true
